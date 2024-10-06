@@ -1,0 +1,31 @@
+.btn-accordion {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: 1px solid #007bff; /* Match the blue */
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-accordion:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3;
+}
+
+.accordion-body {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #007bff; /* Blue border for content */
+}
+
+.icon {
+    color: white;
+    font-size: 18px;
+}
+
+.accordion-group {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}

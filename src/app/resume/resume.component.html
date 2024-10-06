@@ -1,0 +1,153 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+    <div class="pb-2">
+        <!-- Accordion Structure -->
+        <accordion [isAnimated]="true" class="shadow">
+
+            <!-- Work Experience Section -->
+            <accordion-group [isOpen]="isWorkExperienceOpen">
+                <button class="btn btn-accordion btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+                    <div style="width: 10.95;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div class="accordion-body">
+                    <h2 class="mb-0">Car Rentel </h2>
+                    <p class="text-muted">Beecoders - July 2024 to August 2024</p>
+                    <ul class="list-unstyled">
+                    <li> Concevoir et implémenter des interfaces utilisateurs réactives avec
+                        Angular.</li>
+                            <li>Intégrer des API RESTful pour assurer une communication fluide entre
+                                frontend et backend.</li>
+                                <li>.Développer un système d'authentification sécurisé avec JWT pour
+                                    gérer les sessions utilisateurs</li>
+                                    <li>Implémenter le RBAC (Contrôle d'Accès Basé sur les Rôles) pour
+                                        sécuriser les fonctionnalités sensibles.</li>
+                            <li> Worked with a small team, utilizing Git and GitHub for version control, and regularly updated tasks in Jira.</li>
+                            <li>Tester et déboguer les fonctionnalités pour garantir la performance et
+                                la qualité de l'application</li>
+                        </ul>
+        
+                    <hr>
+                    <h2 class="mb-0">Café Management System</h2>
+                    <p class="text-muted">June 2024</p>
+                    <ul class="list-unstyled">
+                        <li>Developed a web-based management system for cafés, allowing owners to manage menus, orders, and customer interactions efficiently.</li>
+                        <li>Used Angular to create a dynamic and responsive frontend interface, providing a seamless user experience for both café managers and customers.</li>
+                        <li>Implemented Spring Boot for the backend logic to handle orders, menu updates, and customer management, with MySQL as the database solution.</li>
+                        <li>Integrated payment gateways and order tracking features to improve operational efficiency for café owners.</li>
+                        <li>Optimized the system for performance and scalability, ensuring it could handle high volumes of customer orders during peak hours.</li>
+                        <li>Improved customer engagement with real-time updates and feedback mechanisms, resulting in a 20% increase in order frequency for café clients.</li>
+                    </ul>
+                    <hr>
+                    <h2 class="mb-0">Simple Counter Application </h2>
+                    <p class="text-muted">2023</p>
+                    <ul class="list-unstyled">
+                    <li> Developed a simple web-based counter application using HTML, CSS, and JavaScript that allows users to increment, decrement, save, and delete counts displayed on the screen.</li>
+                            <li> Utilized JavaScript for dynamic content updates, providing an interactive experience for users..</li>
+                            <li> Managed data persistence using MySQL, designing tables for users, cars, and reservations, while ensuring efficient queries.</li>
+                            <li> Employed CSS for aesthetic enhancements, creating a visually appealing layout with a background image and responsive buttons..</li>
+                            <li> mplemented event handlers to manage user interactions effectively and display real-time updates of the count.</li>
+                        </ul>
+                        <hr>
+    <h2 class="mb-0">Hero Management App</h2>
+    <p class="text-muted">2023</p>
+    <ul class="list-unstyled">
+        <li>Developed a web application using Angular that allows users to create and manage a list of superheroes, including their names, powers, and images.</li>
+        <li>Implemented responsive design and integrated Angular Material for enhanced user experience.</li>
+        <li>Created a dynamic frontend that enables real-time data updates and user interactions for adding and viewing superheroes.</li>
+        <li>Used RESTful APIs for backend operations, allowing seamless data handling and persistence.</li>
+        <li>Optimized application performance, contributing to a smooth and efficient user experience.</li>
+    </ul>
+                    
+                </div>
+            </accordion-group>
+
+            <!-- Education Section -->
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-accordion btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                   
+
+                    </div>
+                    
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">University of Carthage</h2>
+                    <p class="text-primary">Higher Institute of Information and Communication Technologies</p>
+                    <ul >
+                        <li>Bachelor's Degree in Information Technology</li>
+                        <li><strong>Expected Graduation: 2025</strong></li>
+                    </ul>
+                </div>
+            </accordion-group>
+
+            <!-- Certifications Section -->
+            <accordion-group [(isOpen)]="isCertificationOpen">
+                <button class="btn btn-accordion btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certifications</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationOpen" style="color: white;">v</div>
+                   
+
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h3 class="font-weight-bold text-primary">Backend Web Development with SprinBoot Certificate</h3>
+                    <p class="text-muted">9antra - the bridge - 2024</p>
+                </div>
+            </accordion-group>
+
+            <!-- Skills Section -->
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-accordion btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                   
+
+                    </div>
+                </button>
+                <div class="accordion-body">
+                    <ul class="list-unstyled">
+                        <!-- Hard Skills -->
+                        <li><strong>Languages:</strong> HTML, CSS, JavaScript, TypeScript, Java, SQL</li>
+                        <li><strong>Frameworks:</strong> Angular, Spring Boot, Bootstrap, Angular Material</li>
+                        <li><strong>Databases:</strong> MySQL, PostgreSQL</li>
+                        <li><strong>Version Control:</strong> Git, GitHub</li>
+                        <li><strong>Technologies:</strong> RESTful APIs, JSON, Responsive Web Design</li>
+                        <li><strong>Development Tools:</strong> IntelliJ IDEA, VS Code, Postman, Jira</li>
+                        <li><strong>Deployment:</strong> Docker, Heroku</li>
+                        
+                        <!-- Soft Skills -->
+                        <li><strong>Soft Skills:</strong> 
+                            <ul>
+                                <li>Problem-Solving</li>
+                                <li>Time Management</li>
+                                <li>Team Collaboration</li>
+                                <li>Critical Thinking</li>
+                                <li>Adaptability</li>
+                                <li>Attention to Detail</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </accordion-group>
+
+        </accordion>
+    </div>
+</div>
